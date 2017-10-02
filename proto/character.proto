@@ -1,0 +1,143 @@
+message Character  {
+  optional int32 id = 1;
+  optional string name = 2;
+  optional string description = 3;
+  optional string modified = 4;
+  optional string resourceURI = 5;
+  repeated Url urls = 6;
+  optional Image thumbnail = 7;
+  optional ComicList comics = 8;
+  optional StoryList stories = 9;
+  optional EventList events = 10;
+  optional SeriesList series = 11;
+  optional Wiki wiki = 12;
+}
+
+message Url {
+  optional string type = 1;
+  optional string url = 2;
+}
+
+message Image {
+  optional string path = 1;
+  optional string extension = 2;
+}
+
+message ComicList {
+  optional int32 available = 1;
+  optional int32 returned = 2;
+  optional string collectionURI = 3;
+  repeated ComicSummary items = 4;
+}
+
+message ComicSummary {
+  optional int32 id = 1;
+  optional string resourceURI = 2;
+  optional string name = 3;
+}
+
+message StoryList {
+  optional int32 available = 1;
+  optional int32 returned = 2;
+  optional string collectionURI = 3;
+  repeated StorySummary items = 4;
+}
+
+message StorySummary {
+  optional string resourceURI = 1;
+  optional string name = 2;
+  optional string type = 3;
+}
+
+message EventList {
+  optional int32 available = 1;
+  optional int32 returned = 2;
+  optional string collectionURI = 3;
+  repeated EventSummary items = 4;
+}
+
+message EventSummary {
+  optional string resourceURI = 1;
+  optional string name = 2;
+}
+
+message SeriesList {
+  optional int32 available = 1;
+  optional int32 returned = 2;
+  optional string collectionURI = 3;
+  repeated SeriesSummary items = 4;
+}
+
+message SeriesSummary {
+  optional string resourceURI = 1;
+  optional string name = 2;
+}
+
+message Wiki {
+  optional string real_name = 1;
+  optional string identity = 2;
+  optional string occupation = 3;
+  optional string place_of_birth = 4; 
+  optional string groups = 5;
+  optional string citizenship = 6;
+  optional string education = 7;
+  optional string aliases = 8;
+  optional string relatives = 9;
+  optional string height = 10;
+  optional string weight = 11;
+  optional string eyes = 12;
+  optional string hair = 13;
+  optional string weapons = 14;
+  optional string powers = 15;
+  optional string creators = 16;
+  optional string debut = 17;
+  optional string origin = 18;
+  optional string significant_issues = 19;
+  optional string main_image = 20;
+  optional string bio_text = 21;
+  optional string bio = 22;
+  repeated string categories = 23;
+  optional string universe = 24;
+  optional string base_of_operations = 25;
+  optional string current_members = 26;
+  optional string former_members = 27;
+  optional string other_members = 28;
+  optional string abilities = 29;
+  optional string paraphernalia = 30;
+  optional string blurb = 31;
+  optional string team_name = 32;
+  optional string leader = 33;
+  optional string members = 34;
+  optional string teamicon = 35;
+  optional string distinguishing_features = 36;
+  optional string home_world = 37;
+  optional string appearance = 38;
+  optional string technology = 39;
+  optional string government = 40;
+  optional string significant_citizens = 41;
+  optional string specieshistory = 42;
+  optional string title_graphic = 43;
+  optional string location = 44;
+  optional string builder = 45;
+  optional string owner = 46;
+  optional string points_of_interest = 47;
+  optional string features = 48;
+  optional string place_text = 49;
+  optional string skin = 50;
+  optional string special_limitations = 51;
+  optional string dstinguishing_features = 52;
+  optional string Place_of_birth = 53;
+  optional string place_of_creation = 54;
+  optional string power = 55;
+  optional string categorytext = 56;
+  optional string weaponss = 57;
+  optional string Date_of_birth = 58;
+  optional string govenment = 59;
+  optional string key_characters = 60;
+  optional string key_issues = 61;
+  optional string tie-ins = 62;
+  optional string event_text = 63;
+  optional string creator = 64;
+  optional string object_text = 65;
+}
+

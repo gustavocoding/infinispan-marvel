@@ -1,0 +1,3 @@
+/subsystem=datagrid-infinispan/cache-container=local/configurations=CONFIGURATIONS/local-cache-configuration=indexedConfig:add
+/subsystem=datagrid-infinispan/cache-container=local/configurations=CONFIGURATIONS/local-cache-configuration=indexedConfig/indexing=INDEXING:add(auto-config=true,indexing=LOCAL)
+/subsystem=datagrid-infinispan/cache-container=local/local-cache=indexed:add(configuration=indexedConfig)
