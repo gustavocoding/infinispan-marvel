@@ -1,4 +1,9 @@
-SERVER_HOME=~/Source/github/infinispan/server/integration/build/target/infinispan-server-9.2.0-SNAPSHOT
+if [[ $# -eq 0 ]] ; then
+    echo 'Usage: ./demo.sh INFINISPAN_SERVER_HOME'
+    exit 1
+fi
+
+SERVER_HOME=$1
 
 # Create user for rest
 ./create-user.sh $SERVER_HOME
